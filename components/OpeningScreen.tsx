@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { Heart, MailOpen } from 'lucide-react'
 import { cn } from '@/lib/utils'
@@ -12,6 +12,30 @@ interface OpeningScreenProps {
 
 export default function OpeningScreen({ guestName, onOpen }: OpeningScreenProps) {
   const [isOpening, setIsOpening] = useState(false)
+  const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 })
+
+  useEffect(() => {
+    const targetDate = new Date('2025-12-20T08:00:00').getTime()
+
+    const interval = setInterval(() => {
+      const now = new Date().getTime()
+      const distance = targetDate - now
+
+      if (distance < 0) {
+        clearInterval(interval)
+        return
+      }
+
+      setTimeLeft({
+        days: Math.floor(distance / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+        minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
+        seconds: Math.floor((distance % (1000 * 60)) / 1000),
+      })
+    }, 1000)
+
+    return () => clearInterval(interval)
+  }, [])
 
   const handleOpen = () => {
     setIsOpening(true)
@@ -64,6 +88,21 @@ export default function OpeningScreen({ guestName, onOpen }: OpeningScreenProps)
           <p className="text-stone-300 font-light tracking-widest uppercase text-sm">
             Wedding Invitation
           </p>
+        </div>
+
+        {/* Countdown */}
+        <div className="flex justify-center gap-3 md:gap-4 text-center">
+          {[
+            { label: 'Hari', value: timeLeft.days },
+            { label: 'Jam', value: timeLeft.hours },
+            { label: 'Menit', value: timeLeft.minutes },
+            { label: 'Detik', value: timeLeft.seconds },
+          ].map((item, i) => (
+            <div key={i} className="flex flex-col items-center bg-white/5 rounded-lg p-2 min-w-[60px] md:min-w-[70px] border border-white/10 backdrop-blur-sm">
+              <span className="text-xl md:text-2xl font-serif font-bold text-rose-200 tabular-nums">{String(item.value).padStart(2, '0')}</span>
+              <span className="text-[10px] uppercase tracking-wider text-stone-400">{item.label}</span>
+            </div>
+          ))}
         </div>
         
         <div className="py-6 w-full space-y-3 border-y border-white/10">
