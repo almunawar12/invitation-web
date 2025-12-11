@@ -121,7 +121,14 @@ function InvitationContent() {
 
           <div className="pb-32 bg-stone-900 text-stone-500 text-center py-12 text-sm border-t border-stone-800">
             <p>© 2025 Hilman Abdul Aziz & Yayu Rahayu Wedding. All rights reserved.</p>
-            <p className="mt-2 text-xs">Created with ❤️ by <a href="https://portofolio-rifkidev.vercel.app/">Rifki Dev</a></p>
+            <p className="mt-2 text-xs">Created with ❤️ by <a 
+              href="https://portofolio-rifkidev.vercel.app/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="underline ml-1"
+            >
+              Rifki Dev
+            </a></p>
           </div>
 
           <BottomNavigation activeSection={activeSection} onNavigate={handleNavigate} />
