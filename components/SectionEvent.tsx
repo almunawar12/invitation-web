@@ -36,7 +36,7 @@ export default function SectionEvent() {
             <div className="space-y-3">
                 <div className="flex justify-center items-center gap-2 text-stone-400">
                    <Calendar className="w-4 h-4" />
-                   <span>Sabtu, 20 Desember 2025</span>
+                   <span>Selasa, 30 Desember 2025</span>
                 </div>
                 <div className="flex justify-center items-center gap-2 text-stone-400">
                    <Clock className="w-4 h-4" />
@@ -44,8 +44,8 @@ export default function SectionEvent() {
                 </div>
             </div>
             <p className="text-stone-300 font-light border-t border-stone-700 pt-6 mt-4">
-                Masjid Agung Al-Azhar<br/>
-                Jl. Sisingamangaraja, Kebayoran Baru
+                Kediaman Mempelai Wanita<br/>
+                Kp. Cikalong RT 03/RW 09 Cibiuk Kaler, Cibiuk Garut
             </p>
           </motion.div>
 
@@ -64,16 +64,16 @@ export default function SectionEvent() {
             <div className="space-y-3">
                 <div className="flex justify-center items-center gap-2 text-stone-400">
                    <Calendar className="w-4 h-4" />
-                   <span>Sabtu, 20 Desember 2025</span>
+                   <span>Selasa, 30 Desember 2025</span>
                 </div>
                 <div className="flex justify-center items-center gap-2 text-stone-400">
                    <Clock className="w-4 h-4" />
-                   <span>11:00 WIB - 14:00 WIB</span>
+                   <span>11:00 WIB - Selesai</span>
                 </div>
             </div>
             <p className="text-stone-300 font-light border-t border-stone-700 pt-6 mt-4">
-                Grand Ballroom Hotel Mulia<br/>
-                Jl. Asia Afrika, Senayan
+                Kediaman Mempelai Wanita<br/>
+                Kp. Cikalong RT 03/RW 09 Cibiuk Kaler, Cibiuk Garut
             </p>
           </motion.div>
         </div>
@@ -85,7 +85,7 @@ export default function SectionEvent() {
             className="mt-16 text-center"
         >
             <a 
-              href="https://goo.gl/maps/placeholder" 
+              href="https://maps.app.goo.gl/Gv8jVMh2qWovoh2T9" 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-4 bg-white text-stone-900 rounded-full font-medium hover:bg-rose-50 hover:scale-105 transition-all duration-300 shadow-lg shadow-white/5"

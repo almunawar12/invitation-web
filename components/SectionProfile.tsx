@@ -37,9 +37,9 @@ export default function SectionProfile() {
             </div>
             
             <div className="space-y-2">
-              <h3 className="text-3xl font-serif font-bold text-stone-800">Rifki Ahmad</h3>
+              <h3 className="text-3xl font-serif font-bold text-stone-800">Hilman Abdul Aziz</h3>
               <p className="text-stone-600 font-medium">Putra Pertama</p>
-              <p className="text-stone-500">Bpk. Ahmad & Ibu Siti</p>
+              <p className="text-stone-500">Bpk. Agus Suryana & Ibu Enok Taryati</p>
               <p className="text-stone-400 text-sm italic pt-2 max-w-xs mx-auto">
                 "Mencintaimu adalah anugerah terindah yang Tuhan berikan dalam hidupku."
               </p>
@@ -64,9 +64,9 @@ export default function SectionProfile() {
             </div>
 
             <div className="space-y-2">
-              <h3 className="text-3xl font-serif font-bold text-stone-800">Salsabila Putri</h3>
-              <p className="text-stone-600 font-medium">Putri Kedua</p>
-              <p className="text-stone-500">Bpk. Budi & Ibu Rina</p>
+              <h3 className="text-3xl font-serif font-bold text-stone-800">Yayu Rahayu</h3>
+              <p className="text-stone-600 font-medium">Putri Keempat</p>
+              <p className="text-stone-500">Bpk. Usep & Ibu Kokom Komariah</p>
               <p className="text-stone-400 text-sm italic pt-2 max-w-xs mx-auto">
                 "Bersamamu, aku menemukan rumah tempat hatiku berpulang."
               </p>

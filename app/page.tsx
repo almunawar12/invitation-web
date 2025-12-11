@@ -91,11 +91,11 @@ function InvitationContent() {
              >
                 <p className="text-lg md:text-xl tracking-[0.3em] uppercase text-rose-200">The Wedding Of</p>
                 <h1 className="text-6xl md:text-8xl font-serif font-bold bg-clip-text text-transparent bg-gradient-to-r from-rose-100 to-amber-100 pb-2">
-                    Rifki <span className="text-4xl md:text-6xl font-light text-stone-400">&</span> Salsabila
+                    Hilman Abdul Aziz <span className="text-4xl md:text-6xl font-light text-stone-400">&</span> Yayu Rahayu
                 </h1>
                 <div className="flex items-center justify-center gap-4 text-xl font-light text-stone-300">
                     <span className="border-t border-stone-600 w-12" />
-                    <p>20 . 12 . 2025</p>
+                    <p>30 . 12 . 2025</p>
                     <span className="border-t border-stone-600 w-12" />
                 </div>
              </motion.div>
@@ -111,8 +111,8 @@ function InvitationContent() {
           </div>
 
           <SectionProfile />
-          <SectionInvite />
           <SectionEvent />
+          <SectionInvite />
           <SectionTimeline />
           <SectionGallery />
           <SectionRSVP />
@@ -120,8 +120,8 @@ function InvitationContent() {
           <SectionWishes />
 
           <div className="pb-32 bg-stone-900 text-stone-500 text-center py-12 text-sm border-t border-stone-800">
-            <p>© 2025 Rifki & Salsabila Wedding. All rights reserved.</p>
-            <p className="mt-2 text-xs">Created with ❤️ by Antigravity</p>
+            <p>© 2025 Hilman Abdul Aziz & Yayu Rahayu Wedding. All rights reserved.</p>
+            <p className="mt-2 text-xs">Created with ❤️ by <a href="https://portofolio-rifkidev.vercel.app/">Rifki Dev</a></p>
           </div>
 
           <BottomNavigation activeSection={activeSection} onNavigate={handleNavigate} />

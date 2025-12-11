@@ -13,7 +13,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "The Wedding of Rifki & Salsabila",
+  title: "The Wedding of Hilman Abdul Aziz & Yayu Rahayu",
   description: "Kami mengundang Anda untuk merayakan pernikahan kami.",
 };
 

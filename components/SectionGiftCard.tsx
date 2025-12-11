@@ -62,7 +62,7 @@ export default function SectionGiftCard() {
 
               <div>
                 <p className="text-stone-400 text-sm">Atas Nama</p>
-                <p className="text-lg font-medium text-white">Rifki Ahmad</p>
+                <p className="text-lg font-medium text-white">Hilman Abdul Aziz Ahmad</p>
               </div>
             </div>
           </motion.div>

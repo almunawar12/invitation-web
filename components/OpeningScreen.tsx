@@ -15,7 +15,7 @@ export default function OpeningScreen({ guestName, onOpen }: OpeningScreenProps)
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 })
 
   useEffect(() => {
-    const targetDate = new Date('2025-12-20T08:00:00').getTime()
+    const targetDate = new Date('2025-12-30T08:00:00').getTime()
 
     const interval = setInterval(() => {
       const now = new Date().getTime()
@@ -77,13 +77,13 @@ export default function OpeningScreen({ guestName, onOpen }: OpeningScreenProps)
         >
           <Heart className="w-20 h-20 text-rose-400 fill-rose-400/20 drop-shadow-lg" />
           <div className="absolute inset-0 flex items-center justify-center">
-            <span className="text-xs font-serif text-rose-100">R & S</span>
+            <span className="text-xs font-serif text-rose-100">H & Y</span>
           </div>
         </motion.div>
 
         <div className="space-y-4">
           <h1 className="text-5xl md:text-6xl font-serif font-bold bg-clip-text text-transparent bg-gradient-to-r from-rose-200 to-amber-200">
-            Rifki & Salsabila
+            Hilman & Yayu
           </h1>
           <p className="text-stone-300 font-light tracking-widest uppercase text-sm">
             Wedding Invitation

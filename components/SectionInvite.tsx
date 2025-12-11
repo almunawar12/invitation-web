@@ -19,26 +19,17 @@ export default function SectionInvite() {
 
           <div className="grid md:grid-cols-2 gap-10 mt-4">
             <div className="space-y-4">
-              <h4 className="font-serif font-bold text-lg text-stone-800 border-b border-stone-200 pb-2 inline-block px-4">
-                Keluarga Pria
-              </h4>
               <ul className="space-y-2 text-stone-600 font-light">
-                <li>Kel. Besar Bpk. Ahmad (Alm)</li>
-                <li>Kel. Besar Bpk. Supriadi</li>
-                <li>Bpk. H. Muhammad & Ibu Hj. Fatimah</li>
+                <li>Ust. Yahya</li>
+                <li>Ust. Yahya Zakaria (Kakanda)</li>
+                <li>Kel Besar Ponpes Miftahuttoriq Garut</li>
+                <li>Kel Besar alm Bpk Soma & alm Ibu Ucu</li>
+                <li>Kel Besar alm Bpk Atam & alm Ibu Inasah</li>
+                <li>Kel Besar Bpk Mamat & Ibu Etik</li>
+                <li>Kel Besar alm Bpk Eha & Ibu Ita Sujana</li>
               </ul>
             </div>
 
-            <div className="space-y-4">
-              <h4 className="font-serif font-bold text-lg text-stone-800 border-b border-stone-200 pb-2 inline-block px-4">
-                Keluarga Wanita
-              </h4>
-              <ul className="space-y-2 text-stone-600 font-light">
-                <li>Kel. Besar Bpk. Budi Santoso</li>
-                <li>Kel. Besar Bpk. Wijaya</li>
-                <li>Bpk. H. Abdullah & Ibu Hj. Aisyah</li>
-              </ul>
-            </div>
           </div>
         </motion.div>
       </div>
