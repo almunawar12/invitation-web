@@ -29,7 +29,7 @@ export default function SectionGiftCard() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-1 gap-6">
           {/* Bank Account */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
@@ -44,15 +44,15 @@ export default function SectionGiftCard() {
             <div className="relative z-10 text-left space-y-6">
               <div className="flex items-center gap-2 mb-4">
                 <div className="w-12 h-8 bg-white/10 rounded flex items-center justify-center font-bold text-xs">BCA</div>
-                <span className="font-serif text-lg">Bank Central Asia</span>
+                <span className="font-serif text-lg">DANA</span>
               </div>
               
               <div>
-                <p className="text-stone-400 text-sm mb-1">Nomor Rekening</p>
+                <p className="text-stone-400 text-sm mb-1">Nomor Dana</p>
                 <div className="flex items-center gap-3">
-                  <p className="text-2xl font-mono tracking-wider text-white">1234 5678 90</p>
+                  <p className="text-2xl font-mono tracking-wider text-white">088212722602</p>
                   <button 
-                    onClick={() => handleCopy('1234567890', 'bca')}
+                    onClick={() => handleCopy('088212722602', 'bca')}
                     className="p-2 hover:bg-white/10 rounded-full transition-colors"
                   >
                     {copied === 'bca' ? <Check className="w-4 h-4 text-green-400" /> : <Copy className="w-4 h-4" />}
@@ -68,7 +68,7 @@ export default function SectionGiftCard() {
           </motion.div>
 
           {/* QRIS */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
@@ -77,11 +77,10 @@ export default function SectionGiftCard() {
           >
             <h3 className="font-bold text-xl">QRIS</h3>
             <div className="w-48 h-48 bg-stone-200 rounded-lg flex items-center justify-center text-stone-400">
-               {/* Placeholder for QR Code */}
                <span className="text-xs">QR CODE IMAGE</span>
             </div>
             <p className="text-sm text-stone-500">Scan untuk mengirim hadiah</p>
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
     </section>

@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { User } from 'lucide-react'
+import Image from 'next/image'
 
 export default function SectionProfile() {
   return (
@@ -31,7 +32,8 @@ export default function SectionProfile() {
               <div className="absolute inset-0 bg-rose-200 rounded-full blur-2xl opacity-20 group-hover:opacity-40 transition-opacity" />
               <div className="relative w-64 h-64 rounded-full overflow-hidden border-4 border-white shadow-2xl">
                  <div className="w-full h-full bg-stone-200 flex items-center justify-center text-stone-400">
-                    <User className="w-20 h-20" />
+                    {/* <User className="w-20 h-20" /> */}
+                    <Image src="/images/male.jpeg" alt="Groom" width={200} height={200} className='w-full h-full object-cover' />
                  </div>
               </div>
             </div>
@@ -58,7 +60,7 @@ export default function SectionProfile() {
               <div className="absolute inset-0 bg-rose-200 rounded-full blur-2xl opacity-20 group-hover:opacity-40 transition-opacity" />
               <div className="relative w-64 h-64 rounded-full overflow-hidden border-4 border-white shadow-2xl">
                  <div className="w-full h-full bg-stone-200 flex items-center justify-center text-stone-400">
-                    <User className="w-20 h-20" />
+                    <Image src="/images/female.jpeg" alt="Groom" width={200} height={200} className='w-full h-full object-cover' />
                  </div>
               </div>
             </div>

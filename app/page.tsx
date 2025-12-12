@@ -113,8 +113,8 @@ function InvitationContent() {
           <SectionProfile />
           <SectionEvent />
           <SectionInvite />
-          <SectionTimeline />
-          <SectionGallery />
+          {/* <SectionTimeline /> */}
+          {/* <SectionGallery /> */}
           <SectionRSVP />
           <SectionGiftCard />
           <SectionWishes />

@@ -17,7 +17,7 @@ export default function SectionInvite() {
             <span className="text-sm font-serif italic text-stone-500">Turut Mengundang</span>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-10 mt-4">
+          <div className="grid md:grid-cols-1 gap-10 mt-4">
             <div className="space-y-4">
               <ul className="space-y-2 text-stone-600 font-light">
                 <li>Ust. Yahya</li>
